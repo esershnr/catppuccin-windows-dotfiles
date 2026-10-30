@@ -1,0 +1,94 @@
+• Customize Windows notifications placement
+	monitor: 1
+	monitorInterfaceName: ''
+	horizontalPlacement: left
+	horizontalDistanceFromScreenEdge: -10
+	verticalPlacement: top
+	verticalDistanceFromScreenEdge: -40
+	animationDirection: automatic
+
+• Taskbar tray system icon tweaks ---> turn off the microphone icon
+
+• Windows 11 File Explorer Styler ---> choose the theme: NoCommandBar
+
+• Taskbar Dock Animation
+AnimationType: 0
+MaxScale: 110
+EffectRadius: 100
+SpacingFactor: 100
+BounceDelay: 500
+FocusDuration: 150
+MirrorForTopTaskbar: 0
+DisableVerticalBounce: 1
+TaskbarLabelsMode: 0
+ExcludeSystemButtonsMode: 0
+LerpSpeed: 60
+DisableBounce: 1
+
+• Taskbar Volume Control
+
+• Nilesoft Shell Animator
+	AnimationMode: fade_slide
+	AnimationOffset: 20
+	NativeSlidePercentage: 0
+	CubicBezier: 0.1, 0.9, 0.2, 1.0
+	AnimationDuration: 800
+	CornerRadius: 8
+	ContextMenuDelay: 0
+	ForceDirection: auto
+	MainMenuOffsetX: -1
+	MainMenuOffsetY: -1
+	SubMenuRightOffsetX: 1
+	SubMenuRightOffsetY: 0
+	SubMenuLeftOffsetX: -4
+	SubMenuLeftOffsetY: 0
+
+• Explorer Font Changer
+	font:
+	  name: JetBrainsMono NFM
+	  glow: 1
+	  r: 200
+	  g: 120
+	  b: 255
+	  a: 255
+	  intensity: 3
+
+• Shadowplay anti-disable
+
+• Windows 11 Accent Window Border
+
+• Accent Highlight Color
+
+• Disk Usage Bar Customizer
+general:
+  remainingSpaceAsProgress: 0
+  warningPercentageThreshold: 90
+  intermediatePercentageThreshold: 0
+rendering:
+  renderUsingVisualStyles: 0
+  darkModeVSRendering: 1
+customRendering:
+  useSystemAccentColor: 0
+  renderBarBorder: 0
+  heightFactor: 100
+  cornerRadiusFactor: 50
+  roundProgressRightCorners: 1
+  percentageLabel: usedSpace
+  percentageLabelFont: JetBrainsMono NFM
+  percentageLabelSize: 85
+  lightModeColors:
+    barColor: '#E6E6E6'
+    barBorderColor: '#BCBCBC'
+    progressColorNormal: '#0070CB'
+    progressColorIntermediate: '#9D5D00'
+    progressColorFull: '#C42B1C'
+    percentageLabelColor: '#000000'
+  darkModeColors:
+    barColor: '#383838'
+    barBorderColor: '#646464'
+    progressColorNormal: '#cba6f7'
+    progressColorIntermediate: '#b4befe'
+    progressColorFull: '#f38ba8'
+    percentageLabelColor: '#f5e0dc'
+	
+• MacOS Minimize Animation

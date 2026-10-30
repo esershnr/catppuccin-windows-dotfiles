@@ -1,0 +1,19 @@
+# Windows internet shortcuts need CRLF
+*.url text eol=crlf
+
+# `reg export` writes UTF-16LE + BOM + CRLF and `reg import` needs exactly that back
+# (the export carries Turkish letters, emoji and Nerd-Font glyphs, so UTF-8 is not an
+# option). Keep it byte-for-byte; git diffs of it are opaque - review with
+# `Get-Content windhawk/settings/windhawk.reg` or re-run `sync.ps1 -Backup` and read.
+*.reg binary
+
+# Windhawk mod sources: keep them byte-for-byte as Windhawk wrote them (CRLF included).
+windhawk/ModsSource/** -text
+
+# Flow Launcher writes its settings JSON with CRLF; keep it so `sync.ps1 -Backup`
+# doesn't show line-ending-only diffs against the live files.
+flowlauncher/UserData/** text eol=crlf
+
+# Git Bash rc files are read by bash: a CRLF checkout (Git for Windows defaults to
+# autocrlf=true on a fresh install) makes bash fail with "$'\r': command not found".
+terminal/bash/** text eol=lf

@@ -1,0 +1,109 @@
+theme: Zesha - CatPuccin Mocha
+styleConstants:
+  - ''
+controlStyles:
+  - target: Taskbar.TaskListButton
+    styles:
+      - CornerRadius=3
+  - target: SystemTray.TextIconContent > Grid#ContainerGrid > SystemTray.AdaptiveTextBlock#Base > TextBlock#InnerTextBlock
+    styles:
+      - FontSize=16
+  - target: SystemTray.NotifyIconView#NotifyItemIcon
+    styles:
+      - MinWidth=25
+  - target: SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter[2] > SystemTray.IconView > Grid > Grid
+    styles:
+      - Visibility=Collapsed
+  - target: SystemTray.TextIconContent > Grid#ContainerGrid
+    styles:
+      - Padding=5
+  - target: SystemTray.ChevronIconView
+    styles:
+      - MinWidth=25
+  - target: SystemTray.OmniButton#NotificationCenterButton > Grid > ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid > Grid > SystemTray.TextIconContent
+    styles:
+      - Visibility=Collapsed
+  - target: Taskbar.TaskListLabeledButtonPanel > Border#BackgroundElement
+    styles:
+      - Background=#181825
+      - CornerRadius=6
+  - target: Grid#SystemTrayFrameGrid
+    styles:
+      - Background=Transparent
+      - CornerRadius=6
+      - Margin=0,5,4,4
+      - Padding=3,0,0,0
+  - target: Taskbar.TaskListLabeledButtonPanel@CommonStates > Rectangle#RunningIndicator
+    styles:
+      - Height=38
+      - RadiusX=5
+      - RadiusY=5
+      - StrokeThickness=1
+      - Stroke@InactivePointerOver=#cba6f7
+      - Stroke@InactivePressed=#cba6f7
+      - Stroke@ActiveNormal=#cba6f7
+      - Stroke@ActivePointerOver=#cba6f7
+      - Stroke@ActivePressed=#cba6f7
+      - Fill=Transparent
+      - Width=38
+      - VerticalAlignment=1
+      - Canvas.ZIndex=1
+      - Stroke=#6c7086
+      - StrokeThickness@ActiveNormal=2
+      - StrokeThickness@ActivePointerOver=2
+      - StrokeThickness@ActivePressed=2
+  - target: SystemTray.ImageIconContent > Grid#ContainerGrid > Image
+    styles:
+      - Width=24
+  - target: SystemTray.TextIconContent > Grid#ContainerGrid > SystemTray.AdaptiveTextBlock#Base > TextBlock#InnerTextBlock
+    styles:
+      - FontSize=15
+  - target: TextBlock#LabelControl
+    styles:
+      - FontFamily=JetBrainsMono NF
+      - Foreground=#cdd6f4
+      - Padding=2,0,8,0
+  - target: Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton]
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.TextBlock#InnerTextBlock[Text=]
+    styles:
+      - Text=
+  - target: Taskbar.TaskbarFrame > Grid#RootGrid > Taskbar.TaskbarBackground > Grid > Rectangle#BackgroundFill
+    styles:
+      - Fill=Transparent
+  - target: Taskbar.TaskbarBackground#HoverFlyoutBackgroundControl > Grid > Rectangle#BackgroundFill
+    styles:
+      - Fill=#181825
+  - target: Rectangle#BackgroundStroke
+    styles:
+      - Fill=Transparent
+  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel > Border#BackgroundElement
+    styles:
+      - Background=#181825
+  - target: TextBlock#DateInnerTextBlock
+    styles:
+      - Margin=0,0,0,-2
+  - target: Grid#OverflowRootGrid > Border
+    styles:
+      - Background=#11111b
+      - BorderBrush=#cba6f7
+      - BorderThickness=1
+      - CornerRadius=8
+  - target: Taskbar.TaskListLabeledButtonPanel@CommonStates > Border#MultiWindowElement
+    styles:
+      - Background@MultiWindowNormal=#45475a
+      - Background@MultiWindowActive=#cba6f7
+      - Background@MultiWindowPointerOver=#cba6f7
+  - target: SystemTray.OmniButton#ControlCenterButton > Grid > ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter[1] > SystemTray.IconView > Grid > Grid > SystemTray.TextIconContent
+    styles:
+      - Foreground=#cba6f7
+  - target: SystemTray.Stack#MainStack > Grid > SystemTray.StackListView > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView > Grid > ContentPresenter > Grid > SystemTray.TextIconContent
+    styles:
+      - Foreground=#cba6f7
+  - target: SystemTray.Stack#NotifyIconStack > Grid > SystemTray.StackListView > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.ChevronIconView > Grid > ContentPresenter > Grid > SystemTray.TextIconContent
+    styles:
+      - Foreground=#cba6f7
+themeResourceVariables:
+  - ''
+xamlDiagnosticsHandling: ''

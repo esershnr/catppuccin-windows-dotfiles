@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Notepad++ look only (dark mode, catppuccin-mocha theme, toolbar/tab icons), cut from the
+     live config.xml. The full file is not tracked: it holds recent files and search history.
+     bootstrap\install.ps1 merges these nodes into %APPDATA%\Notepad++\config.xml. -->
+<NotepadPlus>
+    <GUIConfigs>
+        <GUIConfig name="ToolBar" visible="yes" fluentColor="9" fluentCustomColor="16230091" fluentMono="no">small</GUIConfig>
+        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="yes" pinButton="yes" showOnlyPinnedButton="no" buttonsOninactiveTabs="no" doubleClick2Close="no" vertical="no" multiLine="no" hide="no" quitOnEmpty="no" tabCompactLabelLen="0" />
+        <GUIConfig name="DarkMode" enable="yes" colorTone="32" customColorTop="3022366" customColorMenuHotTrack="5916485" customColorActive="2431000" customColorMain="1773841" customColorError="11045875" customColorText="16045773" customColorDarkText="14598842" customColorDisabledText="13151654" customColorLinkText="16430217" customColorEdge="10257535" customColorHotEdge="11704723" customColorDisabledEdge="8810604" enableWindowsMode="no" darkThemeName="catppuccin-mocha.xml" darkToolBarIconSet="0" darkTbFluentColor="9" darkTbFluentCustomColor="16230091" darkTbFluentMono="no" darkTabIconSet="2" darkTabUseTheme="yes" lightThemeName="catppuccin-mocha.xml" lightToolBarIconSet="0" lightTbFluentColor="9" lightTbFluentCustomColor="15677832" lightTbFluentMono="no" lightTabIconSet="2" lightTabUseTheme="yes" />
+    </GUIConfigs>
+</NotepadPlus>

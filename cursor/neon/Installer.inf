@@ -1,0 +1,51 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, 
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"neon arrow.ani"
+"neon Helps.ani"
+"neon working.ani"
+"neon busy.ani"
+"neon precision.ani"
+"neon text.ani"
+"neon pen.cur"
+"neon unavail.ani"
+"neon vertical.cur"
+"neon horizontal.cur"
+"neon diagonal 1.cur"
+"neon diagonal 2.cur"
+"neon move.cur"
+"neon up.cur"
+"neon link.ani"
+
+[Strings]
+CUR_DIR        	= "Cursors\neon"
+SCHEME_NAME    	= "neon"
+pointer		= "neon arrow.ani"
+help		= "neon helps.ani"
+work		= "neon working.ani"
+busy		= "neon busy.ani"
+cross		= "neon precision.ani"
+text		= "neon text.ani"
+hand		= "neon pen.cur"
+unavailiable	= "neon unavail.ani"
+vert		= "neon vertical.cur"
+horz		= "neon horizontal.cur"
+dgn1		= "neon diagonal 1.cur"
+dgn2		= "neon diagonal 2.cur"
+move		= "neon move.cur"
+alternate	= "neon up.cur"
+link		= "neon link.ani"

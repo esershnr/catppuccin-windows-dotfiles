@@ -1,0 +1,40 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# mpv runtime (yeniden üretilir; watch_later izlenen dosya yollarını sızdırır)
+mpv/portable_config/cache/
+mpv/portable_config/watch_later/
+
+# Fontlar repoda tutulmuyor (~280 MB); fonts/README.md -> nerdfonts.com
+fonts/**
+!fonts/README.md
+!fonts/*.url
+
+# OS / editör
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.log
+
+# Secrets (env dosyaları; .example hariç)
+.env
+*.env
+!*.env.example
+
+# Flow Launcher: UserData altında sadece sync.ps1'in izlediği ayar JSON'ları
+# tutulur; eklenti binary'leri, cache, log, sürümlü app-* klasörü girmez.
+flowlauncher/UserData/**
+!flowlauncher/UserData/
+!flowlauncher/UserData/Settings/
+!flowlauncher/UserData/Settings/Settings.json
+!flowlauncher/UserData/Settings/Plugins/
+!flowlauncher/UserData/Settings/Plugins/Flow.Launcher.Plugin.Explorer/
+!flowlauncher/UserData/Settings/Plugins/Flow.Launcher.Plugin.Explorer/Settings.json
+!flowlauncher/UserData/Settings/Plugins/Flow.Launcher.Plugin.Program/
+!flowlauncher/UserData/Settings/Plugins/Flow.Launcher.Plugin.Program/Settings.json

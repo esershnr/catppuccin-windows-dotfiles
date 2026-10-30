@@ -1,0 +1,64 @@
+ShowSeconds: 0
+TimeFormat: HH:mm:ss
+DateFormat: dd.MM.yyyy - dd MMMM dddd
+WeekdayFormat: dddd
+WeekdayFormatCustom: Paz, Pzt, Sal, Çar, Per, Cuma, Cmt
+TopLine: ''
+BottomLine: '| %date% 󰸘 | %time%  |'
+MiddleLine: ''
+TooltipLine: '%web1_full%'
+TooltipLineMode: append
+Width: 0
+Height: 0
+MaxWidth: 0
+TextSpacing: 0
+DataCollection:
+  NetworkMetricsFormat: mbs
+  NetworkMetricsFixedDecimals: -1
+  PercentageFormat: spacePaddingAndSymbol
+  UpdateInterval: 1
+  NetworkAdapterName: ''
+  GpuAdapterName: ''
+MediaPlayer:
+  IgnoredPlayers:
+    - ''
+  MaxLength: 28
+  NoMediaText: No media
+  RemoveBrackets: 0
+WebContentWeatherLocation: ''
+WebContentWeatherFormat: '%c 🌡️%t 🌬️%w'
+WebContentWeatherUnits: autoDetect
+WebContentsItems:
+  - Url: https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+    BlockStart: <item>
+    Start: <title>
+    End: </title>
+    ContentMode: xmlHtml
+    SearchReplace:
+      - Search: ''
+        Replace: ''
+    MaxLength: 28
+WebContentsUpdateInterval: 10
+TimeZones:
+  - Turkey Standard Time
+TimeStyle:
+  Hidden: 1
+  TextColor: '#FFFFFF'
+  TextAlignment: ''
+  FontSize: 0
+  FontFamily: ''
+  FontWeight: ''
+  FontStyle: ''
+  FontStretch: ''
+  CharacterSpacing: 0
+DateStyle:
+  Hidden: 0
+  TextColor: '#cba6f7'
+  TextAlignment: ''
+  FontSize: 12
+  FontFamily: JetBrainsMonoNL Nerd Font Propo
+  FontWeight: Light
+  FontStyle: ''
+  FontStretch: ''
+  CharacterSpacing: -50
+oldTaskbarOnWin11: 0

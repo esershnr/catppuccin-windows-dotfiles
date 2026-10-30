@@ -1,0 +1,78 @@
+#Requires Senbonzakura
+Persistent
+
+; -------------------------------------------------------------------------
+; Komorebi Keybindings Configuration
+; Modified for Senbonzakura compatibility
+; -------------------------------------------------------------------------
+
+; Alt (!) / Shift (+) / Ctrl (^) / Win (#)
+
+; Focus windows using Alt + H/J/K/L
+!h::Run("komorebic.exe focus left", , "Hide")
+!j::Run("komorebic.exe focus down", , "Hide")
+!k::Run("komorebic.exe focus up", , "Hide")
+!l::Run("komorebic.exe focus right", , "Hide")
+
+; Focus windows using Alt + Arrow Keys
+!Left::Run("komorebic.exe focus left", , "Hide")
+!Down::Run("komorebic.exe focus down", , "Hide")
+!Up::Run("komorebic.exe focus up", , "Hide")
+!Right::Run("komorebic.exe focus right", , "Hide")
+
+; Move windows using Alt + Shift + H/J/K/L
+!+h::Run("komorebic.exe move left", , "Hide")
+!+j::Run("komorebic.exe move down", , "Hide")
+!+k::Run("komorebic.exe move up", , "Hide")
+!+l::Run("komorebic.exe move right", , "Hide")
+
+; Move windows using Alt + Shift + Arrow Keys
+!+Left::Run("komorebic.exe move left", , "Hide")
+!+Down::Run("komorebic.exe move down", , "Hide")
+!+Up::Run("komorebic.exe move up", , "Hide")
+!+Right::Run("komorebic.exe move right", , "Hide")
+
+; Stack windows using Alt + Ctrl + H/J/K/L
+!^h::Run("komorebic.exe stack left", , "Hide")
+!^j::Run("komorebic.exe stack down", , "Hide")
+!^k::Run("komorebic.exe stack up", , "Hide")
+!^l::Run("komorebic.exe stack right", , "Hide")
+
+; Stack navigation using Alt + [ and Alt + ]
+![::Run("komorebic.exe cycle-stack prev", , "Hide")
+!]::Run("komorebic.exe cycle-stack next", , "Hide")
+
+; Unstack window using Alt + Shift + U
+!+u::Run("komorebic.exe unstack", , "Hide")
+
+; Toggle tiling mode / float / layout options
+!f::Run("komorebic.exe toggle-float", , "Hide")
+!m::Run("komorebic.exe toggle-monocle", , "Hide")
+!p::Run("komorebic.exe toggle-maximize", , "Hide")
+
+; Workspaces (Alt + 1..9 to Focus Workspace 0..8)
+!1::Run("komorebic.exe focus-workspace 0", , "Hide")
+!2::Run("komorebic.exe focus-workspace 1", , "Hide")
+!3::Run("komorebic.exe focus-workspace 2", , "Hide")
+!4::Run("komorebic.exe focus-workspace 3", , "Hide")
+!5::Run("komorebic.exe focus-workspace 4", , "Hide")
+!6::Run("komorebic.exe focus-workspace 5", , "Hide")
+!7::Run("komorebic.exe focus-workspace 6", , "Hide")
+!8::Run("komorebic.exe focus-workspace 7", , "Hide")
+!9::Run("komorebic.exe focus-workspace 8", , "Hide")
+
+; Move window to Workspace (Alt + Shift + 1..9 to Move to Workspace 0..8)
+!+1::Run("komorebic.exe move-to-workspace 0", , "Hide")
+!+2::Run("komorebic.exe move-to-workspace 1", , "Hide")
+!+3::Run("komorebic.exe move-to-workspace 2", , "Hide")
+!+4::Run("komorebic.exe move-to-workspace 3", , "Hide")
+!+5::Run("komorebic.exe move-to-workspace 4", , "Hide")
+!+6::Run("komorebic.exe move-to-workspace 5", , "Hide")
+!+7::Run("komorebic.exe move-to-workspace 6", , "Hide")
+!+8::Run("komorebic.exe move-to-workspace 7", , "Hide")
+!+9::Run("komorebic.exe move-to-workspace 8", , "Hide")
+
+; Tiling Control
+!r::Run("komorebic.exe reload-configuration", , "Hide")
+!q::Run("komorebic.exe stop", , "Hide")
+!s::Run("komorebic.exe start", , "Hide")

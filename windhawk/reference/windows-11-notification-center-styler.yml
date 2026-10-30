@@ -1,0 +1,130 @@
+theme: 'Zesha - CatPuccin Mocha'
+styleConstants:
+  - ''
+controlStyles:
+  - target: Grid#NotificationCenterGrid
+    styles:
+      - Background:=#181825
+      - BorderBrush:=#cba6f7
+  - target: Grid#CalendarCenterGrid
+    styles:
+      - Background:=#181825
+      - BorderBrush:=#cba6f7
+  - target: ScrollViewer#CalendarControlScrollViewer
+    styles:
+      - Background:=#181825
+  - target: Border#CalendarHeaderMinimizedOverlay
+    styles:
+      - Background:=#181825
+  - target: ActionCenter.FocusSessionControl#FocusSessionControl > Grid#FocusGrid
+    styles:
+      - Background:=#181825
+  - target: MenuFlyoutPresenter
+    styles:
+      - Background:=#181825
+  - target: Border#JumpListRestyledAcrylic
+    styles:
+      - Background:=#181825
+  - target: Grid#ControlCenterRegion
+    styles:
+      - Background:=#181825
+      - BorderBrush:=#cba6f7
+  - target: Windows.UI.Xaml.Controls.Grid#L1Grid > Border
+    styles:
+      - Background:=#181825
+  - target: Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion
+    styles:
+      - Background:=#181825
+      - BorderBrush:=#cba6f7
+  - target: Grid#MediaTransportControlsRoot
+    styles:
+      - Background:=#181825
+  - target: ContentPresenter#PageContent
+    styles:
+      - Background:=#181825
+  - target: ContentPresenter#PageContent > Grid > Border
+    styles:
+      - Background:=#181825
+  - target: QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot
+    styles:
+      - Background:=#181825
+  - target: QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot > ContentPresenter#PageHeader
+    styles:
+      - Background:=#181825
+  - target: ScrollViewer#ListContent
+    styles:
+      - Background:=#181825
+  - target: ActionCenter.FlexibleToastView#FlexibleNormalToastView
+    styles:
+      - Background:=#181825
+  - target: Border#ToastBackgroundBorder2
+    styles:
+      - Background:=#181825
+  - target: Button#ClearAll > ContentPresenter
+    styles:
+      - Background:=#cba6f7
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#DoNotDisturbButton > Grid > ContentPresenter
+    styles:
+      - Background:=#cba6f7
+  - target: Button#ExpandCollapseButton > ContentPresenter
+    styles:
+      - Background:=#cba6f7
+  - target: Windows.UI.Xaml.Controls.Grid#WeekDayNames > Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Foreground:=#cba6f7
+  - target: Windows.UI.Xaml.Controls.Grid#FocusTimeSelector > Button > ContentPresenter
+    styles:
+      - Background:=#cba6f7
+  - target: Button#StartButton > ContentPresenter
+    styles:
+      - Background:=#cba6f7
+  - target: Windows.UI.Xaml.Controls.Border#ItemOpaquePlating
+    styles:
+      - Background:=#181825
+      - BorderBrush:=#cba6f7
+      - CornerRadius=6
+      - Margin=6,0,6,8
+      - BorderThickness=1
+  - target: ActionCenter.GroupView > Windows.UI.Xaml.Controls.Grid
+    styles:
+      - Background:=#181825
+  - target: Grid
+    styles:
+      - RequestedTheme=2
+  - target: TextBlock#NotificationsTextBlock
+    styles:
+      - Foreground:=#cba6f7
+  - target: Windows.UI.Xaml.Controls.StackPanel#CalendarHeader > Button > Grid > Border > ContentPresenter > TextBlock
+    styles:
+      - Foreground:=#cba6f7
+  - target: ControlCenter.PaginatedToggleButton > Windows.UI.Xaml.Controls.ContentPresenter@CommonStates
+    styles:
+      - Background@Checked=#cba6f7
+      - Background@CheckedPointerOver=#181825
+      - Background@Normal=#181825
+      - Background@PointerOver=#cba6f7
+  - target: Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect
+    styles:
+      - Fill=#cba6f7
+  - target: Windows.UI.Xaml.Shapes.Rectangle#HorizontalDecreaseRect
+    styles:
+      - Fill=#cba6f7
+  - target: Windows.UI.Xaml.Shapes.Ellipse#SliderInnerThumb
+    styles:
+      - Fill=#cba6f7
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Windows.UI.Xaml.Controls.Border
+    styles:
+      - Background=#cba6f7
+  - target: Windows.UI.Xaml.Controls.Button#PlayPauseButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Background@Normal=#181825
+      - Background@PointerOver=#cba6f7
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Background@Normal=#cba6f7
+      - Background@PointerOver=#cba6f7
+  - target: Windows.UI.Xaml.Controls.FontIcon#Content > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Foreground:=#cba6f7
+themeResourceVariables:
+  - ''

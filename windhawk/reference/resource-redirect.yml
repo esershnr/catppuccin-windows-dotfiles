@@ -1,0 +1,9 @@
+iconTheme: Catppuccin Mauve|themes/icons/niivu/Catppuccin%20mauve.zip
+disableThumbnails: 1
+allResourceRedirect: 0
+themePaths:
+  - ''
+redirectionResourcePaths:
+  - original: ''
+    redirect: ''
+themeFolder: ''

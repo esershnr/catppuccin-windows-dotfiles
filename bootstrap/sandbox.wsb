@@ -1,0 +1,18 @@
+<Configuration>
+  <Networking>Enable</Networking>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\Dev\Dotfiles\catppuccin-windows-dotfiles</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\dotfiles</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>C:\Dev\Work\dotfiles-sandbox-sonuc</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\sonuc</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>powershell.exe -NoExit -ExecutionPolicy Bypass -Command "Set-Location C:\Users\WDAGUtilityAccount\Desktop\dotfiles; Write-Host 'Run: .\bootstrap\install.ps1 -LogDir C:\Users\WDAGUtilityAccount\Desktop\sonuc'"</Command>
+  </LogonCommand>
+</Configuration>
