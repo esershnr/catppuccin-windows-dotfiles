@@ -51,8 +51,14 @@ $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 # Sorun yasarsan asagidaki satiri yorumdan cikar:
 # try { chcp 65001 > $null } catch {}
 
+# Cikti bir programa yonlendirildiyse (baska bir uygulama powershell.exe -Command
+# calistirip stdout'u okuyorsa) ekrana hicbir sey basma. Yoksa fastfetch logosu o
+# programin okudugu ciktiya karisir. Ornek: CoD bootstrapper_installer servis
+# durumunu boyle okuyor, logo yuzunden "Stopped"u goremedi ve Warzone acilmadi.
+$script:IsRedirected = [Console]::IsOutputRedirected
+
 # 2. Ekrani Temizle
-Clear-Host
+if (-not $script:IsRedirected) { Clear-Host }
 
 # 3. Ucuncu Parti Araclar
 # VSCode, Antigravity, Cursor gibi editor-icine-gomulu terminalleri tespit et.
@@ -63,7 +69,7 @@ $script:IsEditorTerminal = [bool]($env:VSCODE_PID) -or ($env:TERM_PROGRAM -eq 'v
 
 # fastfetch: SADECE gercek/bagimsiz terminalde calissin (Windows Terminal, conhost vb.)
 # Editor terminallerinde (VSCode, Antigravity) gosterilmesin.
-if ($Host.Name -eq 'ConsoleHost' -and -not $script:IsEditorTerminal) {
+if ($Host.Name -eq 'ConsoleHost' -and -not $script:IsEditorTerminal -and -not $script:IsRedirected) {
     try {
         fastfetch -c "$HOME/.config/fastfetch/config.jsonc"
     }
@@ -104,11 +110,14 @@ Set-Alias -Name reload -Value Reload-Profile
 
 # 5. PowerShell Optimizasyonlari
 # PSReadLine, PowerShell 5.1+ ile zaten birlikte gelir; ekstra modul kontrolu kaldirildi.
-Set-PSReadLineOption -BellStyle None
-Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle InlineView
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+# Yonlendirilmis ciktida PredictionSource hata basar, o yuzden yalniz gercek konsolda.
+if (-not $script:IsRedirected) {
+    Set-PSReadLineOption -BellStyle None
+    Set-PSReadLineOption -PredictionSource History
+    Set-PSReadLineOption -PredictionViewStyle InlineView
+    Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+    Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+}
 
 # 6. (Opsiyonel) Profil yukleme suresini olcmek icin:
 # Measure-Command { . $PROFILE }
